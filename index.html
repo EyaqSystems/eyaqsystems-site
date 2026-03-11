@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EYAQ Systems | CIVICAR</title>
+<meta name="description" content="EYAQ Systems es una empresa tecnológica peruana especializada en desarrollo de software, aplicaciones móviles y soluciones digitales. Conoce CIVICAR, nuestra aplicación de consultas informativas vehiculares y ciudadanas.">
+
+<style>
+:root{
+  --bg:#0f172a;
+  --primary:#1d4ed8;
+  --text:#111827;
+  --muted:#4b5563;
+  --soft:#f5f7fb;
+  --white:#ffffff;
+  --line:#dbe3ee;
+}
+
+*{box-sizing:border-box;}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--soft);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  width:min(1100px,92%);
+  margin:0 auto;
+}
+
+header{
+  background:linear-gradient(135deg,#0f172a,#172554);
+  color:var(--white);
+  padding:24px 0 70px;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-bottom:42px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:16px;
+  font-size:0.95rem;
+}
+
+.brand{
+  font-size:1.2rem;
+  font-weight:700;
+}
+
+.hero{
+  max-width:780px;
+}
+
+.hero h1{
+  font-size:clamp(2.1rem,4vw,3.4rem);
+  line-height:1.08;
+  margin:0 0 14px;
+}
+
+.hero p{
+  color:#dbe4f3;
+  font-size:1.05rem;
+  margin:0 0 20px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:700;
+}
+
+.btn-primary{
+  background:var(--primary);
+  color:white;
+}
+
+.btn-secondary{
+  border:1px solid rgba(255,255,255,.25);
+  color:white;
+}
+
+main{
+  padding:34px 0 52px;
+}
+
+section{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:30px;
+  margin-bottom:20px;
+}
+
+h2{
+  margin-top:0;
+  font-size:1.8rem;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:20px;
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:18px;
+  background:#fafcff;
+}
+
+.card h3{
+  margin:0 0 10px;
+  font-size:1.05rem;
+}
+
+.list{
+  padding-left:18px;
+}
+
+.list li{
+  margin-bottom:8px;
+}
+
+footer{
+  background:#111827;
+  color:white;
+  padding:28px 0;
+  margin-top:30px;
+}
+
+footer a{
+  color:#c7d7ff;
+  text-decoration:none;
+}
+
+footer p{
+  margin:6px 0;
+}
+
+.footer-links{
+  margin-top:10px;
+}
+
+.footer-links a{
+  margin-right:16px;
+}
+
+@media (max-width:768px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  nav{
+    align-items:flex-start;
+  }
+
+  nav a{
+    margin-left:0;
+    margin-right:14px;
+    display:inline-block;
+    margin-top:6px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">EYAQ Systems</div>
+
+      <div>
+        <a href="#empresa">Empresa</a>
+        <a href="#civicar">CIVICAR</a>
+        <a href="#seguridad">Seguridad</a>
+        <a href="#contacto">Contacto</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="support.html">Soporte</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Soluciones tecnológicas y aplicaciones móviles orientadas a la información y la transformación digital</h1>
+      <p>
+        EYAQ Systems es una empresa tecnológica peruana especializada en desarrollo de software,
+        aplicaciones móviles y soluciones digitales para organizaciones públicas y privadas.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#civicar">Conocer CIVICAR</a>
+        <a class="btn btn-secondary" href="support.html">Solicitar soporte</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="empresa">
+    <h2>Sobre EYAQ Systems</h2>
+    <p>
+      EYAQ Systems desarrolla software, plataformas digitales y herramientas tecnológicas
+      orientadas a mejorar el acceso a la información y optimizar procesos mediante tecnología.
+    </p>
+    <p class="muted">
+      Nuestro enfoque combina desarrollo de software, aplicaciones móviles e innovación tecnológica
+      para crear soluciones modernas, seguras y escalables.
+    </p>
+  </section>
+
+  <section id="civicar">
+    <h2>CIVICAR</h2>
+    <p>
+      CIVICAR es una aplicación móvil diseñada para facilitar consultas informativas vehiculares
+      y ciudadanas de forma rápida, organizada y accesible desde dispositivos móviles.
+    </p>
+    <p class="muted">
+      La plataforma permite realizar verificaciones informativas en tiempo real mediante un sistema
+      de consultas integrado, optimizando procesos de validación y acceso a información relevante.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Consultas rápidas</h3>
+        <p>Permite consultar información mediante placa, DNI u otros identificadores habilitados por el sistema.</p>
+      </div>
+
+      <div class="card">
+        <h3>Acceso móvil</h3>
+        <p>Disponible desde dispositivos móviles con conexión a internet, facilitando el uso desde cualquier lugar.</p>
+      </div>
+
+      <div class="card">
+        <h3>Modelo por planes</h3>
+        <p>Incluye opciones de acceso gratuitas y planes premium según el número de consultas disponibles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Funciones principales</h2>
+    <ul class="list">
+      <li>Consultas informativas vehiculares y ciudadanas.</li>
+      <li>Resultados organizados y fáciles de interpretar.</li>
+      <li>Acceso desde dispositivos móviles.</li>
+      <li>Historial de consultas dentro del servicio.</li>
+      <li>Modelo de uso basado en planes de consultas.</li>
+    </ul>
+  </section>
+
+  <section id="seguridad">
+    <h2>Seguridad y uso de la información</h2>
+    <p>
+      EYAQ Systems aplica medidas técnicas orientadas a proteger la información procesada
+      dentro de sus aplicaciones y servicios digitales.
+    </p>
+    <p class="muted">
+      La información es utilizada para el funcionamiento del sistema, la gestión de consultas,
+      la mejora de la experiencia del usuario y la seguridad del servicio.
+    </p>
+    <p>
+      Para más detalles, revisa nuestra <a href="privacy.html">Política de Privacidad</a>.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Correo:</strong> admin@eyaqsystems.com</p>
+    <p><strong>Ubicación:</strong> Ollantaytambo, Cusco, Perú</p>
+    <p><strong>Soporte:</strong> disponible a través de nuestra página de <a href="support.html">Soporte</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p><strong>EYAQ Systems</strong></p>
+    <p>Empresa tecnológica especializada en desarrollo de software, aplicaciones móviles y soluciones digitales.</p>
+    <p>Ollantaytambo, Cusco, Perú</p>
+    <p>admin@eyaqsystems.com</p>
+
+    <div class="footer-links">
+      <a href="privacy.html">Política de Privacidad</a>
+      <a href="support.html">Soporte</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
