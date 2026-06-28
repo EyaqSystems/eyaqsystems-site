@@ -3,209 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EYAQ Systems | CIVICAR</title>
-<meta name="description" content="EYAQ Systems es una empresa tecnológica peruana especializada en desarrollo de software, aplicaciones móviles y soluciones digitales. Conoce CIVICAR, nuestra aplicación de consultas informativas vehiculares y ciudadanas.">
+<title>EYAQ Systems | Tecnología con propósito</title>
+<meta name="description" content="EYAQ Systems — empresa tecnológica peruana. CRM Inteligente con IA, Caja Rápida, EXYBI marketplace, GoValle delivery y CIVICAR.">
 
-<style>
-:root{
-  --bg:#0f172a;
-  --primary:#1d4ed8;
-  --text:#111827;
-  --muted:#4b5563;
-  --soft:#f5f7fb;
-  --white:#ffffff;
-  --line:#dbe3ee;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-*{box-sizing:border-box;}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:var(--soft);
-  color:var(--text);
-  line-height:1.6;
-}
-
-.container{
-  width:min(1100px,92%);
-  margin:0 auto;
-}
-
-header{
-  background:linear-gradient(135deg,#0f172a,#172554);
-  color:var(--white);
-  padding:24px 0 70px;
-}
-
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:16px;
-  margin-bottom:42px;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:16px;
-  font-size:0.95rem;
-}
-
-.brand{
-  font-size:1.2rem;
-  font-weight:700;
-}
-
-.hero{
-  max-width:780px;
-}
-
-.hero h1{
-  font-size:clamp(2.1rem,4vw,3.4rem);
-  line-height:1.08;
-  margin:0 0 14px;
-}
-
-.hero p{
-  color:#dbe4f3;
-  font-size:1.05rem;
-  margin:0 0 20px;
-}
-
-.hero-actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:18px;
-}
-
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  padding:12px 18px;
-  border-radius:10px;
-  font-weight:700;
-}
-
-.btn-primary{
-  background:var(--primary);
-  color:white;
-}
-
-.btn-secondary{
-  border:1px solid rgba(255,255,255,.25);
-  color:white;
-}
-
-main{
-  padding:34px 0 52px;
-}
-
-section{
-  background:white;
-  border:1px solid var(--line);
-  border-radius:16px;
-  padding:30px;
-  margin-bottom:20px;
-}
-
-h2{
-  margin-top:0;
-  font-size:1.8rem;
-}
-
-.muted{
-  color:var(--muted);
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin-top:20px;
-}
-
-.card{
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:18px;
-  background:#fafcff;
-}
-
-.card h3{
-  margin:0 0 10px;
-  font-size:1.05rem;
-}
-
-.list{
-  padding-left:18px;
-}
-
-.list li{
-  margin-bottom:8px;
-}
-
-footer{
-  background:#111827;
-  color:white;
-  padding:28px 0;
-  margin-top:30px;
-}
-
-footer a{
-  color:#c7d7ff;
-  text-decoration:none;
-}
-
-footer p{
-  margin:6px 0;
-}
-
-.footer-links{
-  margin-top:10px;
-}
-
-.footer-links a{
-  margin-right:16px;
-}
-
-@media (max-width:768px){
-  .grid{
-    grid-template-columns:1fr;
-  }
-
-  nav{
-    align-items:flex-start;
-  }
-
-  nav a{
-    margin-left:0;
-    margin-right:14px;
-    display:inline-block;
-    margin-top:6px;
-  }
-}
-</style>
+<link rel="stylesheet" href="css/3d-styles.css">
+<link rel="stylesheet" href="css/solutions.css">
 </head>
 
 <body>
 
+<canvas id="bg-canvas"></canvas>
+
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
 <header>
   <div class="container">
     <nav>
       <div class="brand">EYAQ Systems</div>
-
       <div>
+        <a href="#soluciones">Soluciones</a>
         <a href="#empresa">Empresa</a>
-        <a href="#civicar">CIVICAR</a>
-        <a href="#seguridad">Seguridad</a>
         <a href="#contacto">Contacto</a>
         <a href="privacy.html">Privacidad</a>
         <a href="support.html">Soporte</a>
@@ -213,111 +33,432 @@ footer p{
     </nav>
 
     <div class="hero">
-      <h1>Soluciones tecnológicas y aplicaciones móviles orientadas a la información y la transformación digital</h1>
+      <div class="hero-badge">Empresa Tecnológica Peruana</div>
+      <h1>Tecnología diseñada para <span class="highlight">negocios peruanos</span></h1>
       <p>
-        EYAQ Systems es una empresa tecnológica peruana especializada en desarrollo de software,
-        aplicaciones móviles y soluciones digitales para organizaciones públicas y privadas.
+        EYAQ Systems construye software, aplicaciones móviles y plataformas digitales
+        que automatizan, conectan y hacen crecer organizaciones en todo el Perú.
       </p>
-
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#civicar">Conocer CIVICAR</a>
-        <a class="btn btn-secondary" href="support.html">Solicitar soporte</a>
+        <a class="btn btn-primary" href="#soluciones">Ver soluciones</a>
+        <a class="btn btn-secondary" href="#contacto">Hablar con el equipo</a>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Productos activos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">🇵🇪</span>
+          <span class="stat-label">Empresa peruana</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">IA</span>
+          <span class="stat-label">Integrada en nuestros sistemas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Soporte disponible</span>
+        </div>
       </div>
     </div>
+
+    <div class="scroll-indicator">Scroll</div>
   </div>
 </header>
 
+<!-- ═══════════════════════ MAIN ═══════════════════════ -->
 <main class="container">
 
-  <section id="empresa">
+  <!-- ──────── SOLUCIONES ──────── -->
+  <section class="section-3d" id="soluciones">
+    <div class="solutions-intro">
+      <span class="section-tag">Ecosistema EYAQ</span>
+      <h2>Nuestras soluciones</h2>
+      <p>Cada producto resuelve un problema real de negocios peruanos — desde la caja de un minimarket hasta la automatización de reservas con IA.</p>
+    </div>
+
+    <!-- ─── 1. CRM INTELIGENTE ─── -->
+    <div class="product-block" id="crm">
+      <div class="product-content">
+        <div class="product-badge badge-crm">IA + CRM</div>
+        <h3 class="product-title">CRM Inteligente</h3>
+        <p class="product-sub">con Samanta, tu asistente de IA</p>
+        <p class="product-desc">
+          Automatiza la atención al cliente, valida reservas con el dueño por WhatsApp
+          y organiza toda la operación en un solo sistema. Ideal para turismo,
+          restaurantes y negocios de reservas.
+        </p>
+        <div class="product-features">
+          <div class="pf-item">💬 Mensajería central — WhatsApp, Facebook, Instagram y web</div>
+          <div class="pf-item">🤖 Samanta atiende, negocia y recopila datos automáticamente</div>
+          <div class="pf-item">✅ Dueño acepta o rechaza reservas desde su WhatsApp</div>
+          <div class="pf-item">📅 Calendario de reservas diario, semanal y mensual</div>
+          <div class="pf-item">📊 Estadísticas de canales y servicios más solicitados</div>
+        </div>
+      </div>
+
+      <div class="product-visual">
+        <div class="crm-visual">
+          <div class="crm-flow">
+            <div class="flow-node">
+              <div class="fn-icon">👤</div>
+              <div class="fn-label">Cliente consulta</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node active">
+              <div class="fn-icon">🤖</div>
+              <div class="fn-label">Samanta responde y negocia</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">
+              <div class="fn-icon">📱</div>
+              <div class="fn-label">Dueño acepta por WhatsApp</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node" style="border-color:rgba(34,197,94,.4);background:rgba(34,197,94,.07);">
+              <div class="fn-icon">✅</div>
+              <div class="fn-label">Reserva confirmada en calendario</div>
+            </div>
+          </div>
+          <div class="crm-rule">
+            ★ Regla principal: Samanta conversa sola con el cliente.<br>
+            La reserva ingresa al calendario <strong>solo cuando el dueño la acepta.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── 2. CAJA RÁPIDA ─── -->
+    <div class="product-block reverse" id="caja">
+      <div class="product-visual">
+        <div class="pos-wrap">
+          <div>
+            <div class="pos-mockup">
+              <div class="pos-header">⚡ CAJA RÁPIDA</div>
+              <div class="pos-items">
+                <div class="pos-row">
+                  <span>🌾 Arroz <span class="qty">×1</span></span>
+                  <span>S/ 8.50</span>
+                </div>
+                <div class="pos-row">
+                  <span>🫙 Aceite <span class="qty">×1</span></span>
+                  <span>S/ 12.00</span>
+                </div>
+                <div class="pos-row">
+                  <span>🥤 Gaseosa <span class="qty">×2</span></span>
+                  <span>S/ 17.00</span>
+                </div>
+              </div>
+              <div class="pos-total"><span>TOTAL</span><span>S/ 37.50</span></div>
+              <div class="pos-methods">
+                <span class="pm-chip">💵 Efectivo</span>
+                <span class="pm-chip">Yape</span>
+                <span class="pm-chip">Plin</span>
+                <span class="pm-chip">💳 Tarjeta</span>
+              </div>
+            </div>
+            <div class="pos-steps">
+              <div class="ps-chip">📦 Stock auto</div>
+              <div class="ps-chip">📊 Reportes</div>
+              <div class="ps-chip">👥 Proveedores</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-content">
+        <div class="product-badge badge-pos">POS + Almacén</div>
+        <h3 class="product-title">Caja Rápida</h3>
+        <p class="product-sub">y control de almacén</p>
+        <p class="product-desc">
+          Sistema para markets y minimarkets. El cajero escanea el código de barras,
+          el sistema muestra el precio y descuenta el stock en tiempo real.
+          El dueño controla ventas, dinero y almacén desde una sola plataforma.
+        </p>
+        <div class="product-features">
+          <div class="pf-item">🔍 Escaneo de código de barras instantáneo</div>
+          <div class="pf-item">📦 Control de almacén — entradas, salidas y devoluciones</div>
+          <div class="pf-item">💰 Yape, Plin, Efectivo y Tarjeta integrados</div>
+          <div class="pf-item">📊 Reportes diarios y cierre de caja</div>
+          <div class="pf-item">⚙️ Gestión de usuarios, precios y proveedores</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── 3. EXYBI ─── -->
+    <div class="product-block" id="exybi">
+      <div class="product-content">
+        <div class="product-badge badge-exybi">Marketplace</div>
+        <h3 class="product-title">EXYBI</h3>
+        <p class="product-sub">La vitrina digital del Perú</p>
+        <p class="product-desc">
+          Plataforma donde personas y negocios publican, encuentran y contratan
+          soluciones de manera fácil, rápida y segura. Un solo ecosistema para
+          exhibirse, generar confianza y crear oportunidades reales.
+        </p>
+        <div class="exybi-lines">
+          <div class="exybi-line">
+            <span class="el-icon">📢</span>
+            <div>
+              <strong>Exybi Anuncios</strong>
+              <small>Habitaciones, alquileres, locales, oficinas y oportunidades</small>
+            </div>
+          </div>
+          <div class="exybi-line">
+            <span class="el-icon">🏢</span>
+            <div>
+              <strong>Exybi Directorio</strong>
+              <small>Técnicos, profesionales, negocios, agentes e inmobiliarias</small>
+            </div>
+          </div>
+          <div class="exybi-line">
+            <span class="el-icon">🎤</span>
+            <div>
+              <strong>Exybi Artistas</strong>
+              <small>DJs, cantantes, animadores, grupos y servicios para eventos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-visual">
+        <div class="exybi-hub-wrap">
+          <div class="exybi-hub">
+            <!-- SVG connection lines -->
+            <svg class="hub-svg" viewBox="0 0 280 280">
+              <!-- Top satellite (140,42) to center (140,140) -->
+              <line class="hub-line" x1="140" y1="84" x2="140" y2="102"/>
+              <!-- Right satellite (238,140) to center (140,140) -->
+              <line class="hub-line" x1="196" y1="140" x2="178" y2="140"/>
+              <!-- Bot satellite (140,238) to center (140,140) -->
+              <line class="hub-line" x1="140" y1="196" x2="140" y2="178"/>
+            </svg>
+            <div class="hub-sat sat-top">📢<br><small>Anuncios</small></div>
+            <div class="hub-center">X</div>
+            <div class="hub-sat sat-right">🏢<br><small>Directorio</small></div>
+            <div class="hub-sat sat-bot">🎤<br><small>Artistas</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── 4. GOVALLE ─── -->
+    <div class="product-block reverse" id="govalle">
+      <div class="product-visual">
+        <div class="govalle-visual">
+          <div class="gv-flow">
+            <div class="gv-node">
+              <div class="gv-icon">📱</div>
+              <small>Pide</small>
+            </div>
+            <div class="gv-arrow"></div>
+            <div class="gv-node">
+              <div class="gv-icon">🍽️</div>
+              <small>Preparan</small>
+            </div>
+            <div class="gv-arrow"></div>
+            <div class="gv-node">
+              <div class="gv-icon">🛵</div>
+              <small>Recogen</small>
+            </div>
+            <div class="gv-arrow"></div>
+            <div class="gv-node">
+              <div class="gv-icon">📍</div>
+              <small>GPS live</small>
+            </div>
+            <div class="gv-arrow"></div>
+            <div class="gv-node">
+              <div class="gv-icon">✅</div>
+              <small>Entregado</small>
+            </div>
+          </div>
+          <div class="valley-cities">
+            <span class="vc-pill">📍 Urubamba</span>
+            <span class="vc-pill">📍 Ollantaytambo</span>
+            <span class="vc-pill">📍 Pisac</span>
+            <span class="vc-pill">📍 Calca</span>
+            <span class="vc-pill">📍 Yucay</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-content">
+        <div class="product-badge badge-govalle">Delivery Local</div>
+        <h3 class="product-title">GoValle</h3>
+        <p class="product-sub">Delivery para el Valle Sagrado</p>
+        <p class="product-desc">
+          Plataforma digital que conecta clientes, restaurantes y repartidores del Valle Sagrado
+          en una sola app. Pide en el Valle. Recíbelo donde estés.
+          Pensada para residentes, turistas, hoteles y negocios locales.
+        </p>
+        <div class="product-features">
+          <div class="pf-item">📱 Pedidos fáciles desde el móvil</div>
+          <div class="pf-item">📍 Seguimiento GPS en tiempo real</div>
+          <div class="pf-item">🏪 Más ventas y visibilidad para restaurantes</div>
+          <div class="pf-item">🛵 Rutas claras y ganancias registradas para repartidores</div>
+          <div class="pf-item">🌄 Modelo escalable a otras provincias</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── 5. CIVICAR ─── -->
+    <div class="product-block" id="civicar">
+      <div class="product-content">
+        <div class="product-badge badge-civicar">App Móvil</div>
+        <h3 class="product-title">CIVICAR</h3>
+        <p class="product-sub">Consultas vehiculares y ciudadanas</p>
+        <p class="product-desc">
+          Aplicación móvil para realizar consultas informativas vehiculares y ciudadanas
+          de forma rápida y organizada. Disponible con planes gratuitos y premium
+          según el número de consultas.
+        </p>
+        <div class="product-features">
+          <div class="pf-item">🔍 Consulta por placa, DNI u otros identificadores</div>
+          <div class="pf-item">⚡ Resultados organizados en tiempo real</div>
+          <div class="pf-item">📱 Acceso desde cualquier dispositivo móvil</div>
+          <div class="pf-item">📋 Historial de consultas disponible</div>
+          <div class="pf-item">📊 Planes gratuitos y premium flexibles</div>
+        </div>
+      </div>
+
+      <div class="product-visual">
+        <div class="civicar-visual">
+          <div class="app-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-app-icon">
+              <img src="Logo_CiviCAr.png" alt="CIVICAR logo">
+            </div>
+            <div class="phone-app-name">CIVICAR</div>
+            <div class="phone-search">🔍 Ingresa placa o DNI...</div>
+            <div class="phone-result">
+              <div class="pr-label">Placa</div>
+              <div class="pr-value">ABC-123</div>
+            </div>
+            <div class="phone-result">
+              <div class="pr-label">Estado</div>
+              <div class="pr-value" style="color:#4ade80;">✓ Verificado</div>
+            </div>
+            <div class="phone-btn">Consultar ahora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /soluciones -->
+
+  <!-- ──────── EMPRESA ──────── -->
+  <section class="section-3d" id="empresa">
+    <span class="section-tag">Quiénes somos</span>
     <h2>Sobre EYAQ Systems</h2>
     <p>
       EYAQ Systems desarrolla software, plataformas digitales y herramientas tecnológicas
       orientadas a mejorar el acceso a la información y optimizar procesos mediante tecnología.
     </p>
     <p class="muted">
-      Nuestro enfoque combina desarrollo de software, aplicaciones móviles e innovación tecnológica
-      para crear soluciones modernas, seguras y escalables.
+      Somos una empresa peruana con base en el Valle Sagrado del Cusco. Combinamos desarrollo de software,
+      inteligencia artificial y aplicaciones móviles para crear soluciones modernas,
+      seguras y escalables pensadas para el contexto local.
     </p>
   </section>
 
-  <section id="civicar">
-    <h2>CIVICAR</h2>
-    <p>
-      CIVICAR es una aplicación móvil diseñada para facilitar consultas informativas vehiculares
-      y ciudadanas de forma rápida, organizada y accesible desde dispositivos móviles.
-    </p>
-    <p class="muted">
-      La plataforma permite realizar verificaciones informativas en tiempo real mediante un sistema
-      de consultas integrado, optimizando procesos de validación y acceso a información relevante.
-    </p>
+  <!-- ──────── CONTACTO ──────── -->
+  <section class="section-3d" id="contacto">
+    <span class="section-tag">Contacto</span>
+    <h2>Contáctanos</h2>
+    <p class="muted">Estamos disponibles para responder tus consultas y ayudarte con nuestras soluciones.</p>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Consultas rápidas</h3>
-        <p>Permite consultar información mediante placa, DNI u otros identificadores habilitados por el sistema.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <strong>Correo electrónico</strong>
+        <a href="mailto:admin@eyaqsystems.com">admin@eyaqsystems.com</a>
       </div>
-
-      <div class="card">
-        <h3>Acceso móvil</h3>
-        <p>Disponible desde dispositivos móviles con conexión a internet, facilitando el uso desde cualquier lugar.</p>
+      <div class="contact-item">
+        <strong>Ubicación</strong>
+        <span>Ollantaytambo, Cusco, Perú</span>
       </div>
-
-      <div class="card">
-        <h3>Modelo por planes</h3>
-        <p>Incluye opciones de acceso gratuitas y planes premium según el número de consultas disponibles.</p>
+      <div class="contact-item">
+        <strong>Soporte técnico</strong>
+        <a href="support.html">Ir a página de soporte →</a>
+      </div>
+      <div class="contact-item">
+        <strong>Privacidad</strong>
+        <a href="privacy.html">Política de privacidad →</a>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Funciones principales</h2>
-    <ul class="list">
-      <li>Consultas informativas vehiculares y ciudadanas.</li>
-      <li>Resultados organizados y fáciles de interpretar.</li>
-      <li>Acceso desde dispositivos móviles.</li>
-      <li>Historial de consultas dentro del servicio.</li>
-      <li>Modelo de uso basado en planes de consultas.</li>
-    </ul>
-  </section>
-
-  <section id="seguridad">
-    <h2>Seguridad y uso de la información</h2>
-    <p>
-      EYAQ Systems aplica medidas técnicas orientadas a proteger la información procesada
-      dentro de sus aplicaciones y servicios digitales.
-    </p>
-    <p class="muted">
-      La información es utilizada para el funcionamiento del sistema, la gestión de consultas,
-      la mejora de la experiencia del usuario y la seguridad del servicio.
-    </p>
-    <p>
-      Para más detalles, revisa nuestra <a href="privacy.html">Política de Privacidad</a>.
-    </p>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p><strong>Correo:</strong> admin@eyaqsystems.com</p>
-    <p><strong>Ubicación:</strong> Ollantaytambo, Cusco, Perú</p>
-    <p><strong>Soporte:</strong> disponible a través de nuestra página de <a href="support.html">Soporte</a>.</p>
-  </section>
-
 </main>
 
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
 <footer>
   <div class="container">
-    <p><strong>EYAQ Systems</strong></p>
-    <p>Empresa tecnológica especializada en desarrollo de software, aplicaciones móviles y soluciones digitales.</p>
-    <p>Ollantaytambo, Cusco, Perú</p>
-    <p>admin@eyaqsystems.com</p>
-
+    <div class="brand">EYAQ Systems</div>
+    <p>Empresa tecnológica peruana — CRM, POS, Marketplace, Delivery y Apps móviles.</p>
+    <p>Ollantaytambo, Cusco, Perú &nbsp;·&nbsp; admin@eyaqsystems.com</p>
     <div class="footer-links">
       <a href="privacy.html">Política de Privacidad</a>
       <a href="support.html">Soporte</a>
     </div>
   </div>
 </footer>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Scripts personalizados -->
+<script src="js/three-setup.js"></script>
+<script src="js/animations.js"></script>
+
+<!-- Product blocks scroll animation -->
+<script>
+(function () {
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+    document.querySelectorAll('.product-block').forEach(function (el) {
+      el.style.opacity = 1; el.style.transform = 'none';
+    });
+    return;
+  }
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray('.product-block').forEach(function (block, i) {
+    const isReverse = block.classList.contains('reverse');
+    gsap.fromTo(block,
+      { opacity: 0, x: isReverse ? 60 : -60, y: 30 },
+      {
+        opacity: 1, x: 0, y: 0, duration: 0.9, ease: 'power3.out',
+        scrollTrigger: {
+          trigger: block,
+          start: 'top 82%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
+    gsap.from(block.querySelectorAll('.pf-item'), {
+      opacity: 0, x: -20, duration: 0.5, stagger: 0.08, ease: 'power2.out',
+      scrollTrigger: { trigger: block, start: 'top 75%', toggleActions: 'play none none reverse' },
+    });
+  });
+
+  gsap.utils.toArray('.flow-node, .gv-node, .hub-sat').forEach(function (el, i) {
+    gsap.from(el, {
+      opacity: 0, scale: 0.7, duration: 0.5, delay: i * 0.1, ease: 'back.out(1.4)',
+      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none reverse' },
+    });
+  });
+
+  gsap.utils.toArray('.vc-pill, .exybi-line').forEach(function (el, i) {
+    gsap.from(el, {
+      opacity: 0, y: 12, duration: 0.4, delay: i * 0.07, ease: 'power2.out',
+      scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none reverse' },
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
