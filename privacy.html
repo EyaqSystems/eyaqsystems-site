@@ -5,32 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidad | EYAQ Systems</title>
 <meta name="description" content="Política de privacidad de CIVICAR, aplicación de EYAQ SOCIEDAD ANONIMA CERRADA (EYAQ Systems), RUC 20615020975.">
-<meta name="theme-color" content="#16233F">
+<meta name="theme-color" content="#05070D">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" type="image/png" href="img/favicon-48.png" sizes="48x48">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/eyaq.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="scroll-meter" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="EYAQ Systems, inicio">
-      <img src="img/eyaq-simbolo.png" alt="" width="38" height="38">
+      <img src="img/eyaq-simbolo.png" alt="" width="40" height="40">
       <span class="brand-text"><b>EYAQ</b><span>Systems</span></span>
     </a>
     <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span></button>
     <ul class="nav-links" id="menu">
-      <li><a href="index.html#soluciones">Soluciones</a></li>
-      <li><a href="index.html#empresa">Empresa</a></li>
-      <li><a href="support.html">Soporte</a></li>
-      <li><a href="privacy.html" aria-current="page">Privacidad</a></li>
-      <li><a class="nav-cta" href="index.html#contacto">Contacto</a></li>
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-servicios">Servicios<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></button>
+        <div class="menu" id="menu-servicios">
+          <a href="index.html#servicio-software" style="--dot:#005FDA"><i></i><b>Software a medida</b><span>Sistemas hechos para tu forma de trabajar</span></a>
+          <a href="index.html#servicio-web" style="--dot:#0C9F63"><i></i><b>Páginas y plataformas web</b><span>Sitios, tiendas y plataformas en línea</span></a>
+          <a href="index.html#servicio-apps" style="--dot:#F57E06"><i></i><b>Aplicaciones móviles</b><span>Apps para Android y iOS</span></a>
+          <a href="index.html#servicio-ia" style="--dot:#005FDA"><i></i><b>IA y automatización</b><span>Asistentes y procesos que trabajan solos</span></a>
+          <a href="index.html#servicio-ti" style="--dot:#0C9F63"><i></i><b>Consultoría y soporte TI</b><span>Diagnóstico, soporte y acompañamiento</span></a>
+        </div>
+      </li>
+      <li class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-marcas">Marcas<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></button>
+        <div class="menu" id="menu-marcas">
+          <a href="exybi.html" style="--dot:#FF0069"><i></i><b>EXYBI</b><span>La vitrina digital del Perú</span></a>
+          <a href="crm.html" style="--dot:#1F3FBF"><i></i><b>CRM Inteligente</b><span>Samanta atiende y tú decides cada reserva</span></a>
+          <a href="civicar.html" style="--dot:#16233F"><i></i><b>CIVICAR</b><span>Consulta vehicular desde tu celular</span></a>
+          <a href="caja-rapida.html" style="--dot:#17803D"><i></i><b>Caja Rápida</b><span>Caja y almacén para markets</span></a>
+          <a href="govalle.html" style="--dot:#D9600A"><i></i><b>GoValle</b><span>Delivery para el Valle Sagrado</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="index.html#precios">Precios</a></li>
+      <li><a class="nav-link" href="index.html#nosotros">Nosotros</a></li>
+      <li><a class="btn btn-primary btn-sm" href="index.html#contacto">Contacto</a></li>
     </ul>
   </div>
 </header>
@@ -130,27 +150,38 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="index.html" aria-label="EYAQ Systems, inicio">
-          <img src="img/eyaq-simbolo.png" alt="" width="38" height="38">
-      <span class="brand-text"><b>EYAQ</b><span>Systems</span></span>
+          <img src="img/eyaq-simbolo.png" alt="" width="40" height="40">
+          <span class="brand-text"><b>EYAQ</b><span>Systems</span></span>
         </a>
-        <p>Empresa tecnológica peruana. CRM, punto de venta, marketplace, delivery y aplicaciones móviles.</p>
+        <p>Software, aplicaciones e inteligencia artificial desde el Valle Sagrado del Cusco.</p>
       </div>
       <div>
-        <h4>Soluciones</h4>
+        <h4>Servicios</h4>
         <ul>
-          <li><a href="index.html#crm">CRM Inteligente</a></li>
-          <li><a href="index.html#caja">Caja Rápida</a></li>
-          <li><a href="index.html#exybi">EXYBI</a></li>
-          <li><a href="index.html#govalle">GoValle</a></li>
-          <li><a href="index.html#civicar">CIVICAR</a></li>
+          <li><a href="index.html#servicio-software">Software a medida</a></li>
+          <li><a href="index.html#servicio-web">Páginas y plataformas web</a></li>
+          <li><a href="index.html#servicio-apps">Aplicaciones móviles</a></li>
+          <li><a href="index.html#servicio-ia">IA y automatización</a></li>
+          <li><a href="index.html#servicio-ti">Consultoría y soporte TI</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Marcas</h4>
+        <ul>
+          <li><a href="exybi.html">EXYBI</a></li>
+          <li><a href="crm.html">CRM Inteligente</a></li>
+          <li><a href="civicar.html">CIVICAR</a></li>
+          <li><a href="caja-rapida.html">Caja Rápida</a></li>
+          <li><a href="govalle.html">GoValle</a></li>
         </ul>
       </div>
       <div>
         <h4>Empresa</h4>
         <ul>
-          <li><a href="index.html#empresa">Quiénes somos</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#precios">Precios</a></li>
           <li><a href="support.html">Soporte</a></li>
-          <li><a href="privacy.html" aria-current="page">Política de privacidad</a></li>
+          <li><a href="privacy.html">Política de privacidad</a></li>
           <li><a href="mailto:admin@eyaqsystems.com">admin@eyaqsystems.com</a></li>
         </ul>
       </div>
@@ -162,6 +193,8 @@
   </div>
 </footer>
 
-<script src="js/site.js" defer></script>
+<a class="float-contact" href="index.html#contacto" aria-label="Ir a contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg><span>Escríbenos</span></a>
+
+<script src="js/eyaq.js" defer></script>
 </body>
 </html>

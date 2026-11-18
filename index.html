@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EYAQ Systems | Tecnología con propósito</title>
-<meta name="description" content="EYAQ Systems es una empresa tecnológica peruana. Desarrollamos CRM con inteligencia artificial, Caja Rápida, EXYBI, GoValle y CIVICAR.">
-<meta name="theme-color" content="#16233F">
-<meta property="og:title" content="EYAQ Systems | Tecnología diseñada para negocios peruanos">
-<meta property="og:description" content="Software, aplicaciones móviles y plataformas digitales hechas en el Perú.">
+<title>EYAQ Systems | Tecnología con propósito para transformar el Perú</title>
+<meta name="description" content="EYAQ Systems desarrolla software a medida, páginas web, aplicaciones móviles e inteligencia artificial desde el Valle Sagrado del Cusco. Marcas propias: CRM Inteligente, EXYBI, Caja Rápida, GoValle y CIVICAR.">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:title" content="EYAQ Systems | Tecnología con propósito para transformar el Perú">
+<meta property="og:description" content="EYAQ Systems desarrolla software a medida, páginas web, aplicaciones móviles e inteligencia artificial desde el Valle Sagrado del Cusco. Marcas propias: CRM Inteligente, EXYBI, Caja Rápida, GoValle y CIVICAR.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://eyaqsystems.com/">
 <meta property="og:image" content="https://eyaqsystems.com/img/og-eyaq.jpg">
@@ -17,307 +17,259 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/eyaq.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="scroll-meter" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="EYAQ Systems, inicio">
-      <img src="img/eyaq-simbolo.png" alt="" width="38" height="38">
+      <img src="img/eyaq-simbolo.png" alt="" width="40" height="40">
       <span class="brand-text"><b>EYAQ</b><span>Systems</span></span>
     </a>
     <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span></button>
     <ul class="nav-links" id="menu">
-      <li><a href="#soluciones">Soluciones</a></li>
-      <li><a href="#empresa">Empresa</a></li>
-      <li><a href="support.html">Soporte</a></li>
-      <li><a href="privacy.html">Privacidad</a></li>
-      <li><a class="nav-cta" href="#contacto">Contacto</a></li>
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-servicios">Servicios<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></button>
+        <div class="menu" id="menu-servicios">
+          <a href="#servicio-software" style="--dot:#005FDA"><i></i><b>Software a medida</b><span>Sistemas hechos para tu forma de trabajar</span></a>
+          <a href="#servicio-web" style="--dot:#0C9F63"><i></i><b>Páginas y plataformas web</b><span>Sitios, tiendas y plataformas en línea</span></a>
+          <a href="#servicio-apps" style="--dot:#F57E06"><i></i><b>Aplicaciones móviles</b><span>Apps para Android y iOS</span></a>
+          <a href="#servicio-ia" style="--dot:#005FDA"><i></i><b>IA y automatización</b><span>Asistentes y procesos que trabajan solos</span></a>
+          <a href="#servicio-ti" style="--dot:#0C9F63"><i></i><b>Consultoría y soporte TI</b><span>Diagnóstico, soporte y acompañamiento</span></a>
+        </div>
+      </li>
+      <li class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-marcas">Marcas<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></button>
+        <div class="menu" id="menu-marcas">
+          <a href="exybi.html" style="--dot:#FF0069"><i></i><b>EXYBI</b><span>La vitrina digital del Perú</span></a>
+          <a href="crm.html" style="--dot:#1F3FBF"><i></i><b>CRM Inteligente</b><span>Samanta atiende y tú decides cada reserva</span></a>
+          <a href="civicar.html" style="--dot:#16233F"><i></i><b>CIVICAR</b><span>Consulta vehicular desde tu celular</span></a>
+          <a href="caja-rapida.html" style="--dot:#17803D"><i></i><b>Caja Rápida</b><span>Caja y almacén para markets</span></a>
+          <a href="govalle.html" style="--dot:#D9600A"><i></i><b>GoValle</b><span>Delivery para el Valle Sagrado</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="#precios">Precios</a></li>
+      <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+      <li><a class="btn btn-primary btn-sm" href="#contacto">Contacto</a></li>
     </ul>
   </div>
 </header>
 
 <main id="contenido">
 
-  <!-- ================= HERO ================= -->
   <section class="hero">
+    <canvas class="ridge" data-colors='["#F57E06","#0C9F63","#005FDA"]' data-rows="26" data-top="0.68" data-reach="0.2" data-top-narrow="0.86" data-reach-narrow="0.15"
+      data-peaks="[[0.53,0.6,0.006],[0.66,1,0.007],[0.76,0.8,0.005],[0.86,0.64,0.005],[0.95,0.52,0.004],[0.12,0.26,0.02],[0.3,0.34,0.02]]"
+      data-peaks-narrow="[[0.13,0.6,0.006],[0.32,0.95,0.007],[0.5,0.55,0.006],[0.69,0.85,0.007],[0.87,0.45,0.006]]" aria-hidden="true"></canvas>
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <span class="pill reveal"><span class="dot"></span>Tecnología con propósito</span>
-          <h1 class="reveal" style="--d:.05s">Tecnología diseñada para <span class="accent">negocios peruanos</span></h1>
-          <p class="hero-lead reveal" style="--d:.1s">
-            Construimos software, aplicaciones móviles y plataformas digitales que
-            automatizan, conectan y hacen crecer a organizaciones en todo el Perú.
-          </p>
-          <div class="hero-actions reveal" style="--d:.15s">
-            <a class="btn btn-primary" href="#soluciones">
-              Ver soluciones
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn-secondary" href="#contacto">Hablar con el equipo</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" style="--d:.1s" aria-hidden="true">
-          <canvas id="globe"></canvas>
-          <div class="float-chip chip-a">
-            <span class="ic ic-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
-            Procesos automatizados
-          </div>
-          <div class="float-chip chip-b">
-            <span class="ic ic-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M21 3 12 12"/><path d="M15 3h6v6"/></svg></span>
-            IA aplicada
-          </div>
-          <div class="float-chip chip-c">
-            <span class="ic ic-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>
-            Apps móviles
-          </div>
-        </div>
-      </div>
-
-      <div class="stats">
-        <div class="stat reveal"><strong>5</strong><span>Productos propios en operación</span></div>
-        <div class="stat reveal" style="--d:.05s"><strong>IA</strong><span>Integrada en nuestros sistemas</span></div>
-        <div class="stat reveal" style="--d:.1s"><strong>100%</strong><span>Desarrollo peruano</span></div>
-        <div class="stat reveal" style="--d:.15s"><strong>Cusco</strong><span>Base en el Valle Sagrado</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SOLUCIONES ================= -->
-  <section class="section section-alt" id="soluciones">
-    <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Ecosistema EYAQ</span>
-        <h2>Nuestras soluciones</h2>
-        <p>Cada producto resuelve un problema real: desde la caja de un minimarket hasta la atención de reservas con inteligencia artificial.</p>
-      </div>
-
-      <nav class="product-nav reveal" aria-label="Productos">
-        <a href="#crm" style="--c:#1B7FD7"><i></i>CRM Inteligente</a>
-        <a href="#caja" style="--c:#F0982B"><i></i>Caja Rápida</a>
-        <a href="#exybi" style="--c:#2FA34F"><i></i>EXYBI</a>
-        <a href="#govalle" style="--c:#F0982B"><i></i>GoValle</a>
-        <a href="#civicar" style="--c:#16233F"><i></i>CIVICAR</a>
-      </nav>
-
-      <div class="products">
-
-        <!-- CRM -->
-        <article class="product reveal" id="crm">
-          <div class="product-copy">
-            <span class="tag">IA + CRM</span>
-            <h3>CRM Inteligente</h3>
-            <p class="sub">con Samanta, tu asistente de IA</p>
-            <p class="desc">Automatiza la atención al cliente, valida las reservas con el dueño por WhatsApp y organiza toda la operación en un solo sistema. Ideal para turismo, restaurantes y negocios de reservas.</p>
-            <ul class="features">
-              <li>Mensajería centralizada: WhatsApp, Facebook, Instagram y web</li>
-              <li>Samanta atiende, negocia y recopila datos por ti</li>
-              <li>El dueño acepta o rechaza reservas desde su WhatsApp</li>
-              <li>Calendario de reservas diario, semanal y mensual</li>
-              <li>Estadísticas de canales y servicios más solicitados</li>
-            </ul>
-          </div>
-          <div class="product-visual" data-tilt="5">
-            <div class="flow">
-              <div class="flow-step tile"><span class="emo">👤</span>Cliente consulta</div>
-              <div class="flow-step tile"><span class="emo">🤖</span>Samanta responde</div>
-              <div class="flow-step tile"><span class="emo">📱</span>Dueño acepta</div>
-              <div class="flow-step tile"><span class="emo">✅</span>Reserva confirmada</div>
-              <p class="flow-note tile">Samanta conversa con el cliente; la reserva entra al calendario <strong>solo cuando el dueño la acepta.</strong></p>
-            </div>
-          </div>
-        </article>
-
-        <!-- CAJA RÁPIDA -->
-        <article class="product reverse c-orange reveal" id="caja">
-          <div class="product-copy">
-            <span class="tag">POS + Almacén</span>
-            <h3>Caja Rápida</h3>
-            <p class="sub">y control de almacén</p>
-            <p class="desc">Sistema para markets y minimarkets. El cajero escanea el código de barras, el sistema muestra el precio y descuenta el stock al instante. El dueño controla ventas, dinero y almacén desde una sola plataforma.</p>
-            <ul class="features">
-              <li>Escaneo de código de barras instantáneo</li>
-              <li>Almacén con entradas, salidas y devoluciones</li>
-              <li>Efectivo, Yape, Plin y tarjeta integrados</li>
-              <li>Reportes diarios y cierre de caja</li>
-              <li>Usuarios, precios y proveedores en un solo lugar</li>
-            </ul>
-          </div>
-          <div class="product-visual">
-            <div class="ticket tile">
-              <div class="ticket-head">CAJA RÁPIDA</div>
-              <div class="ticket-row"><span>Arroz<em>×1</em></span><span>S/ 8.50</span></div>
-              <div class="ticket-row"><span>Aceite<em>×1</em></span><span>S/ 12.00</span></div>
-              <div class="ticket-row"><span>Gaseosa<em>×2</em></span><span>S/ 17.00</span></div>
-              <div class="ticket-total"><span>Total</span><span>S/ 37.50</span></div>
-              <div class="chips"><span>Efectivo</span><span>Yape</span><span>Plin</span><span>Tarjeta</span></div>
-            </div>
-          </div>
-        </article>
-
-        <!-- EXYBI -->
-        <article class="product c-green reveal" id="exybi">
-          <div class="product-copy">
-            <span class="tag">Marketplace</span>
-            <h3>EXYBI</h3>
-            <p class="sub">La vitrina digital del Perú</p>
-            <p class="desc">Plataforma donde personas y negocios publican, encuentran y contratan servicios de forma fácil, rápida y segura. Un solo ecosistema para exhibirse, generar confianza y crear oportunidades reales.</p>
-            <ul class="features">
-              <li><strong>Anuncios:</strong> habitaciones, alquileres, locales y oficinas</li>
-              <li><strong>Directorio:</strong> técnicos, profesionales, negocios e inmobiliarias</li>
-              <li><strong>Artistas:</strong> DJs, cantantes, animadores y servicios para eventos</li>
-            </ul>
-          </div>
-          <div class="product-visual" data-tilt="6">
-            <div class="hub">
-              <div class="hub-ring"></div>
-              <div class="hub-center">EXYBI</div>
-              <div class="hub-node tile n1"><span class="emo">📢</span>Anuncios</div>
-              <div class="hub-node tile n2"><span class="emo">🏢</span>Directorio</div>
-              <div class="hub-node tile n3"><span class="emo">🎤</span>Artistas</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- GOVALLE -->
-        <article class="product reverse c-orange reveal" id="govalle">
-          <div class="product-copy">
-            <span class="tag">Delivery local</span>
-            <h3>GoValle</h3>
-            <p class="sub">Delivery para el Valle Sagrado</p>
-            <p class="desc">Conecta clientes, restaurantes y repartidores del Valle Sagrado en una sola app. Pide en el Valle y recíbelo donde estés. Pensada para residentes, turistas, hoteles y negocios locales.</p>
-            <ul class="features">
-              <li>Pedidos fáciles desde el celular</li>
-              <li>Seguimiento del pedido en tiempo real</li>
-              <li>Más ventas y visibilidad para restaurantes</li>
-              <li>Rutas claras y ganancias registradas para repartidores</li>
-              <li>Modelo listo para crecer a otras provincias</li>
-            </ul>
-          </div>
-          <div class="product-visual">
-            <div class="route">
-              <div class="route-steps">
-                <span class="rider" aria-hidden="true">🛵</span>
-                <div class="route-step"><span class="dotx">📱</span>Pide</div>
-                <div class="route-step"><span class="dotx">🍽️</span>Preparan</div>
-                <div class="route-step"><span class="dotx">🛍️</span>Recogen</div>
-                <div class="route-step"><span class="dotx">📍</span>En camino</div>
-                <div class="route-step"><span class="dotx">✅</span>Entregado</div>
-              </div>
-              <div class="towns"><span>Urubamba</span><span>Ollantaytambo</span><span>Pisac</span><span>Calca</span><span>Yucay</span></div>
-            </div>
-          </div>
-        </article>
-
-        <!-- CIVICAR -->
-        <article class="product c-navy reveal" id="civicar">
-          <div class="product-copy">
-            <span class="tag">App móvil</span>
-            <h3>CIVICAR</h3>
-            <p class="sub">Consulta vehicular desde tu celular</p>
-            <p class="desc">Ingresa una placa y obtén en segundos la información del vehículo, organizada y fácil de leer.</p>
-            <ul class="features">
-              <li>Datos del vehículo</li>
-              <li>Seguro obligatorio y revisión técnica</li>
-              <li>Acceso solo con cuenta registrada</li>
-              <li>Historial de tus consultas en el teléfono</li>
-            </ul>
-            <a class="store-link" href="https://play.google.com/store/apps/details?id=pe.civicar.app" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#2FA34F" d="M3.6 2.3 13.4 12l-9.8 9.7c-.4-.2-.6-.7-.6-1.2V3.5c0-.5.2-.9.6-1.2z"/><path fill="#1B7FD7" d="m16.8 8.6-3.4 3.4-9.8-9.7c.3-.1.7-.1 1.1.1z"/><path fill="#F0982B" d="m16.8 15.4-12.1 6.2c-.4.2-.8.2-1.1.1l9.8-9.7z"/><path fill="#FFD23F" d="m20.4 10.5c.8.4.8 1.6 0 2.1l-3.6 2.8-3.4-3.4 3.4-3.4z"/></svg>
-              Disponible en Google Play
-            </a>
-          </div>
-          <div class="product-visual">
-            <div class="phone">
-              <div class="phone-screen">
-                <div class="phone-notch"></div>
-                <img class="phone-logo" src="Logo_CiviCAr.png" alt="Logo de CIVICAR" width="56" height="56" loading="lazy">
-                <div class="phone-name">CIVICAR</div>
-                <div class="phone-input">ABC-123</div>
-                <div class="phone-row"><span>Vehículo</span><b>Sedán · 2020</b></div>
-                <div class="phone-row"><span>Seguro</span><b class="ok">Vigente</b></div>
-                <div class="phone-row"><span>Revisión</span><b class="ok">Vigente</b></div>
-                <div class="phone-btn">Consultar</div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= EMPRESA ================= -->
-  <section class="section" id="empresa">
-    <div class="container about">
-      <div class="about-copy reveal">
-        <span class="eyebrow">Quiénes somos</span>
-        <h2 class="section-title" style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Sobre EYAQ Systems</h2>
-        <p>Desarrollamos software, plataformas digitales y herramientas tecnológicas que mejoran el acceso a la información y optimizan procesos de negocios y personas.</p>
-        <p>Somos una empresa peruana con base en el Valle Sagrado del Cusco. Combinamos desarrollo de software, inteligencia artificial y aplicaciones móviles para crear soluciones modernas, seguras y escalables, pensadas para el contexto local.</p>
-      </div>
-      <div class="values">
-        <div class="value tile reveal" data-tilt="4">
-          <span class="ic ic-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/><path d="M9 21h6"/></svg></span>
-          <div><h4>Soluciones a la medida</h4><p>Partimos del problema real del negocio, no de la tecnología.</p></div>
-        </div>
-        <div class="value tile reveal" style="--d:.06s" data-tilt="4">
-          <span class="ic ic-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
-          <div><h4>Seguridad y privacidad</h4><p>Protegemos la información y cumplimos la Ley 29733.</p></div>
-        </div>
-        <div class="value tile reveal" style="--d:.12s" data-tilt="4">
-          <span class="ic ic-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>
-          <div><h4>Mejora continua</h4><p>Actualizamos nuestros productos con lo que aprendemos de cada cliente.</p></div>
+      <div class="hero-copy">
+        <h1><span class="t-blue">Tecnología</span> con <span class="t-green">propósito</span> para transformar <span class="t-orange">el Perú</span></h1>
+        <p class="hero-lead">Software, aplicaciones e inteligencia artificial hechos en el Valle Sagrado del Cusco.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#servicios">Ver servicios<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="#marcas">Conocer las marcas</a>
         </div>
       </div>
     </div>
+    <p class="hero-place"><b>Valle Sagrado de los Incas</b>Cusco, Perú</p>
+    <nav class="summits" aria-label="Marcas de EYAQ Systems">
+      <a class="summit" href="exybi.html" data-peak="0" style="--dot:#FF0069"><span data-short="EXYBI">EXYBI</span><i></i></a>
+      <a class="summit" href="crm.html" data-peak="1" style="--dot:#1F3FBF"><span data-short="CRM">CRM Inteligente</span><i></i></a>
+      <a class="summit" href="civicar.html" data-peak="2" style="--dot:#16233F"><span data-short="CIVICAR">CIVICAR</span><i></i></a>
+      <a class="summit" href="caja-rapida.html" data-peak="3" style="--dot:#17803D"><span data-short="Caja">Caja Rápida</span><i></i></a>
+      <a class="summit" href="govalle.html" data-peak="4" style="--dot:#D9600A"><span data-short="GoValle">GoValle</span><i></i></a>
+    </nav>
   </section>
 
-  <!-- ================= CONTACTO ================= -->
-  <section class="section section-alt" id="contacto">
+  <section class="section" id="servicios">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Contacto</span>
-        <h2>Conversemos</h2>
-        <p>Estamos disponibles para responder tus consultas y ayudarte a elegir la solución adecuada.</p>
+        <span class="kicker">Servicios</span>
+        <h2>Lo que construimos para ti</h2>
+        <p>Elige un servicio y mira qué incluye.</p>
       </div>
-
-      <div class="contact-grid">
-        <a class="contact-card tile reveal" href="mailto:admin@eyaqsystems.com">
-          <span class="ic ic-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-          <small>Correo</small>
-          <strong>admin@eyaqsystems.com</strong>
-        </a>
-        <div class="contact-card tile reveal" style="--d:.05s">
-          <span class="ic ic-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-          <small>Ubicación</small>
-          <strong>Ollantaytambo, Cusco, Perú</strong>
+      <div class="services reveal">
+        <div class="service-tabs" role="tablist" aria-label="Servicios de EYAQ Systems" aria-orientation="vertical">
+          <button class="service-tab" type="button" role="tab" id="servicio-software" aria-controls="panel-software" aria-selected="true" tabindex="0" style="--tab-hue:#005FDA"><small>01</small>Software a medida<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <button class="service-tab" type="button" role="tab" id="servicio-web" aria-controls="panel-web" aria-selected="false" tabindex="-1" style="--tab-hue:#0C9F63"><small>02</small>Páginas y plataformas web<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <button class="service-tab" type="button" role="tab" id="servicio-apps" aria-controls="panel-apps" aria-selected="false" tabindex="-1" style="--tab-hue:#F57E06"><small>03</small>Aplicaciones móviles<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <button class="service-tab" type="button" role="tab" id="servicio-ia" aria-controls="panel-ia" aria-selected="false" tabindex="-1" style="--tab-hue:#005FDA"><small>04</small>IA y automatización<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <button class="service-tab" type="button" role="tab" id="servicio-ti" aria-controls="panel-ti" aria-selected="false" tabindex="-1" style="--tab-hue:#0C9F63"><small>05</small>Consultoría y soporte TI<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </div>
-        <a class="contact-card tile reveal" style="--d:.1s" href="support.html">
-          <span class="ic ic-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><path d="M12 17h.01"/></svg></span>
-          <small>Soporte técnico</small>
-          <strong>Ir a soporte →</strong>
-        </a>
-        <a class="contact-card tile reveal" style="--d:.15s" href="privacy.html">
-          <span class="ic ic-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
-          <small>Privacidad</small>
-          <strong>Política de privacidad →</strong>
-        </a>
-      </div>
-
-      <div class="cta-band reveal">
         <div>
-          <h3>¿Tienes un proyecto en mente?</h3>
-          <p>Cuéntanos qué necesita tu negocio y te respondemos a la brevedad.</p>
+          <div class="service-panel" role="tabpanel" id="panel-software" aria-labelledby="servicio-software" style="--panel-hue:#005FDA">
+            <h3>Software a medida</h3>
+            <p>Sistemas construidos alrededor de cómo trabaja tu empresa o institución, no al revés.</p>
+            <ul class="ticks"><li>Levantamos tus procesos antes de escribir una línea de código</li><li>Entregamos por hitos: ves avances funcionando, no promesas</li><li>Capacitamos a tu equipo y damos soporte después de la entrega</li></ul>
+            <a class="btn btn-ink btn-sm" href="#contacto">Cotizar este servicio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="service-proof"><span>Así nacieron</span><a href="crm.html">CRM Inteligente</a><a href="caja-rapida.html">Caja Rápida</a></div>
+          </div>
+          <div class="service-panel" role="tabpanel" id="panel-web" aria-labelledby="servicio-web" style="--panel-hue:#0C9F63" hidden>
+            <h3>Páginas y plataformas web</h3>
+            <p>Sitios, tiendas y plataformas rápidas, pensadas primero para el celular.</p>
+            <ul class="ticks"><li>Diseño propio para tu marca, sin plantillas</li><li>Carga rápida y estructura lista para buscadores</li><li>Dominio, alojamiento y mantenimiento</li></ul>
+            <a class="btn btn-ink btn-sm" href="#contacto">Cotizar este servicio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="service-proof"><span>Así nació</span><a href="exybi.html">EXYBI</a></div>
+          </div>
+          <div class="service-panel" role="tabpanel" id="panel-apps" aria-labelledby="servicio-apps" style="--panel-hue:#F57E06" hidden>
+            <h3>Aplicaciones móviles</h3>
+            <p>Aplicaciones para Android y iOS, desde la idea hasta su publicación en las tiendas.</p>
+            <ul class="ticks"><li>Diseño de la experiencia, pantalla por pantalla</li><li>Cuentas de usuario, pagos y notificaciones</li><li>Publicación y actualizaciones en las tiendas</li></ul>
+            <a class="btn btn-ink btn-sm" href="#contacto">Cotizar este servicio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="service-proof"><span>Así nació</span><a href="civicar.html">CIVICAR</a></div>
+          </div>
+          <div class="service-panel" role="tabpanel" id="panel-ia" aria-labelledby="servicio-ia" style="--panel-hue:#005FDA" hidden>
+            <h3>IA y automatización</h3>
+            <p>Asistentes que atienden a tus clientes y procesos que dejan de hacerse a mano.</p>
+            <ul class="ticks"><li>Asistentes conversacionales en WhatsApp, redes y web</li><li>Reglas claras: la IA propone y una persona decide</li><li>Integración con los sistemas que ya usas</li></ul>
+            <a class="btn btn-ink btn-sm" href="#contacto">Cotizar este servicio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="service-proof"><span>Así nació</span><a href="crm.html">Samanta, del CRM Inteligente</a></div>
+          </div>
+          <div class="service-panel" role="tabpanel" id="panel-ti" aria-labelledby="servicio-ti" style="--panel-hue:#0C9F63" hidden>
+            <h3>Consultoría y soporte TI</h3>
+            <p>Te ayudamos a decidir qué tecnología necesitas y a mantenerla funcionando.</p>
+            <ul class="ticks"><li>Diagnóstico de tus procesos y herramientas actuales</li><li>Soporte técnico y mantenimiento</li><li>Acompañamiento a empresas e instituciones públicas</li></ul>
+            <a class="btn btn-ink btn-sm" href="#contacto">Cotizar este servicio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            
+          </div>
         </div>
-        <a class="btn btn-secondary" href="mailto:admin@eyaqsystems.com?subject=Quiero%20hablar%20con%20EYAQ%20Systems">Escríbenos</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section raised" id="marcas">
+    <div class="container rail-head">
+      <div class="section-head reveal">
+        <span class="kicker">Marcas</span>
+        <h2>Nuestras marcas</h2>
+        <p>Productos creados por EYAQ Systems.</p>
+      </div>
+      <div class="rail-nav">
+        <button type="button" data-rail="prev" aria-label="Marcas anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button type="button" data-rail="next" aria-label="Marcas siguientes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="rail">
+      <a class="peak" href="exybi.html" style="--h:#FF0069" draggable="false" data-tilt="6"><svg class="peak-line" viewBox="0 0 430 200" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,162 11,162 22,169 32,158 43,167 54,163 64,163 75,168 86,157 97,159 108,168 118,159 129,166 140,156 150,146 161,139 172,136 183,124 194,114 204,118 215,72 226,71 237,62 247,58 258,34 269,26 280,19 290,50 301,42 312,62 322,91 333,99 344,133 355,121 366,142 376,155 387,151 398,163 408,166 419,163 430,155" fill="none" stroke="#FF0069" stroke-width="1.6" stroke-linejoin="round" opacity=".8"/></svg><span class="peak-alt">Publica desde S/ 7</span><h3>EXYBI</h3><p>Anuncios con fotos y video que se encuentran por distrito: inmuebles, empleo, servicios, negocios y artistas.</p><span class="peak-go">Conocer EXYBI<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="peak" href="crm.html" style="--h:#1F3FBF" draggable="false" data-tilt="6"><svg class="peak-line" viewBox="0 0 430 200" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,169 11,168 22,164 32,159 43,167 54,166 64,168 75,157 86,158 97,167 108,160 118,156 129,164 140,154 150,157 161,153 172,129 183,131 194,107 204,87 215,90 226,71 237,81 247,40 258,70 269,56 280,50 290,32 301,74 312,78 322,96 333,113 344,120 355,144 366,138 376,153 387,156 398,156 408,153 419,155 430,165" fill="none" stroke="#1F3FBF" stroke-width="1.6" stroke-linejoin="round" opacity=".8"/></svg><span class="peak-alt">Desde S/ 88.50 al mes</span><h3>CRM Inteligente</h3><p>Samanta atiende a tus clientes y tú aceptas cada reserva desde WhatsApp. Para empresas de turismo que atienden por redes sociales.</p><span class="peak-go">Conocer CRM Inteligente<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="peak" href="civicar.html" style="--h:#16233F" draggable="false" data-tilt="6"><svg class="peak-line" viewBox="0 0 430 200" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,160 11,157 22,157 32,163 43,161 54,168 64,166 75,162 86,167 97,157 108,166 118,165 129,164 140,153 150,158 161,138 172,135 183,126 194,118 204,91 215,77 226,85 237,85 247,61 258,72 269,55 280,28 290,65 301,62 312,67 322,81 333,118 344,124 355,147 366,139 376,148 387,146 398,160 408,156 419,158 430,157" fill="none" stroke="#16233F" stroke-width="1.6" stroke-linejoin="round" opacity=".8"/></svg><span class="peak-alt">En Google Play</span><h3>CIVICAR</h3><p>Ingresa una placa y obtén los datos del vehículo, su seguro y su revisión técnica.</p><span class="peak-go">Conocer CIVICAR<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="peak" href="caja-rapida.html" style="--h:#17803D" draggable="false" data-tilt="6"><svg class="peak-line" viewBox="0 0 430 200" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,158 11,166 22,161 32,159 43,159 54,159 64,164 75,160 86,162 97,166 108,159 118,163 129,156 140,156 150,159 161,149 172,132 183,132 194,114 204,91 215,81 226,54 237,87 247,48 258,45 269,20 280,67 290,69 301,72 312,87 322,95 333,108 344,120 355,134 366,145 376,145 387,157 398,158 408,163 419,155 430,156" fill="none" stroke="#17803D" stroke-width="1.6" stroke-linejoin="round" opacity=".8"/></svg><span class="peak-alt">Markets y minimarkets</span><h3>Caja Rápida</h3><p>Escanea, cobra con efectivo, Yape, Plin o tarjeta, y el almacén se actualiza en cada venta.</p><span class="peak-go">Conocer Caja Rápida<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="peak" href="govalle.html" style="--h:#D9600A" draggable="false" data-tilt="6"><svg class="peak-line" viewBox="0 0 430 200" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,168 11,169 22,165 32,163 43,164 54,169 64,158 75,167 86,156 97,164 108,168 118,163 129,165 140,153 150,153 161,147 172,145 183,141 194,114 204,108 215,93 226,58 237,73 247,44 258,34 269,20 280,48 290,74 301,86 312,68 322,84 333,103 344,121 355,122 366,140 376,149 387,147 398,160 408,158 419,162 430,168" fill="none" stroke="#D9600A" stroke-width="1.6" stroke-linejoin="round" opacity=".8"/></svg><span class="peak-alt">Valle Sagrado</span><h3>GoValle</h3><p>Una sola app para clientes, restaurantes y repartidores de Urubamba, Ollantaytambo, Pisac, Calca y Yucay.</p><span class="peak-go">Conocer GoValle<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </section>
+
+  <section class="section" id="proceso">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Método</span>
+        <h2>Cómo trabajamos</h2>
+        <p>En cada paso ves algo funcionando.</p>
+      </div>
+      <ol class="route-steps reveal">
+        <li style="--step-hue:#005FDA"><b>Entendemos el problema</b><span>Escuchamos a quienes usarán el sistema.</span></li>
+        <li style="--step-hue:#0C9F63"><b>Planificamos por hitos</b><span>Acordamos qué se entrega y cuándo.</span></li>
+        <li style="--step-hue:#F57E06"><b>Construimos y mostramos</b><span>Pruebas cada avance y pides cambios a tiempo.</span></li>
+        <li style="--step-hue:#071B45"><b>Publicamos y acompañamos</b><span>Capacitamos a tu equipo y damos soporte.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="precios">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Precios</span>
+        <h2>Elige tu plan</h2>
+        <p>Precios finales, con IGV incluido.</p>
+      </div>
+      <div class="plans reveal">
+        <article class="plan" data-tilt="5" style="--h:#FF0069">
+          <div class="plan-name"><h3>EXYBI</h3><span>Publica tu anuncio</span></div>
+          <div class="plan-price"><b>S/ 7</b><span>desde, por publicación</span></div>
+          <ul class="ticks"><li>Solo video: S/ 7</li><li>Solo fotos: S/ 8</li><li>Fotos y video: S/ 10</li><li>Contacto directo por WhatsApp</li><li>Sin comisiones</li></ul>
+          <a class="btn btn-hue" href="exybi.html#precios">Ver planes de EXYBI</a>
+        </article>
+        <article class="plan" data-tilt="5" style="--h:#1F3FBF">
+          <span class="plan-badge">Nuevo</span>
+          <div class="plan-name"><h3>CRM Inteligente</h3><span>Para turismo y redes sociales</span></div>
+          <div class="plan-price"><b>S/ 413</b><span>instalación + S/ 88.50/mes</span></div>
+          <ul class="ticks"><li>Bandeja única para todos tus canales</li><li>Samanta responde a tus clientes</li><li>Aceptas cada reserva desde WhatsApp</li><li>Calendario y estadísticas</li><li>Soporte de EYAQ</li></ul>
+          <a class="btn btn-hue" href="crm.html#precios">Solicitar este plan</a>
+        </article>
+        <article class="plan" data-tilt="5" style="--h:#005FDA">
+          <div class="plan-name"><h3>A medida</h3><span>Software, web y aplicaciones</span></div>
+          <div class="plan-price"><b>Cotiza</b><span>según tu proyecto</span></div>
+          <ul class="ticks"><li>Software a medida</li><li>Páginas y plataformas web</li><li>Aplicaciones móviles</li><li>IA y automatización</li><li>Consultoría y soporte TI</li></ul>
+          <a class="btn btn-hue" href="#contacto">Pedir cotización</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section raised" id="nosotros">
+    <div class="container about">
+      <div class="reveal">
+        <div class="section-head">
+          <span class="kicker">Nosotros</span>
+          <h2>Hecho en el Valle Sagrado. Pensado para el mundo.</h2>
+        </div>
+        <p>Creamos software, aplicaciones y plataformas con inteligencia artificial que ordenan negocios y conectan personas.</p>
+      </div>
+      <div class="facts reveal">
+        <div><b>Transparencia</b><span>Precios publicados, con IGV incluido.</span></div>
+        <div><b>Confianza</b><span>Tus datos protegidos conforme a la Ley 29733.</span></div>
+        <div><b>Tecnología</b><span>Inteligencia artificial, con una persona que decide al final.</span></div>
+        <div><b>Resultados</b><span>Avances que puedes probar en cada hito.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <div class="container contact">
+      <div class="reveal">
+        <div class="section-head">
+          <span class="kicker">Contacto</span>
+          <h2>Cuéntanos qué necesitas</h2>
+          <p>Te respondemos a la brevedad.</p>
+        </div>
+        <div class="contact-lines">
+          <a href="mailto:admin@eyaqsystems.com"><small>Correo</small>admin@eyaqsystems.com</a>
+          <span><small>Ubicación</small>Valle Sagrado, Cusco, Perú</span>
+          <a href="support.html"><small>Soporte técnico</small>Ir a soporte</a>
+        </div>
+      </div>
+      <form class="form reveal" data-correo="admin@eyaqsystems.com">
+        <div class="field">
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="servicio">¿Qué te interesa?</label>
+          <select id="servicio" name="servicio">
+              <option>Software a medida</option>
+              <option>Páginas y plataformas web</option>
+              <option>Aplicaciones móviles</option>
+              <option>IA y automatización</option>
+              <option>Consultoría y soporte TI</option>
+              <option>EXYBI</option>
+              <option>CRM Inteligente</option>
+              <option>CIVICAR</option>
+              <option>Caja Rápida</option>
+              <option>GoValle</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Cuéntanos tu caso</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar mensaje<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form-note">Se abrirá tu correo con el mensaje listo para enviar.</p>
+      </form>
     </div>
   </section>
 
@@ -328,25 +280,36 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="index.html" aria-label="EYAQ Systems, inicio">
-          <img src="img/eyaq-simbolo.png" alt="" width="38" height="38">
-      <span class="brand-text"><b>EYAQ</b><span>Systems</span></span>
+          <img src="img/eyaq-simbolo.png" alt="" width="40" height="40">
+          <span class="brand-text"><b>EYAQ</b><span>Systems</span></span>
         </a>
-        <p>Empresa tecnológica peruana. CRM, punto de venta, marketplace, delivery y aplicaciones móviles.</p>
+        <p>Software, aplicaciones e inteligencia artificial desde el Valle Sagrado del Cusco.</p>
       </div>
       <div>
-        <h4>Soluciones</h4>
+        <h4>Servicios</h4>
         <ul>
-          <li><a href="#crm">CRM Inteligente</a></li>
-          <li><a href="#caja">Caja Rápida</a></li>
-          <li><a href="#exybi">EXYBI</a></li>
-          <li><a href="#govalle">GoValle</a></li>
-          <li><a href="#civicar">CIVICAR</a></li>
+          <li><a href="#servicio-software">Software a medida</a></li>
+          <li><a href="#servicio-web">Páginas y plataformas web</a></li>
+          <li><a href="#servicio-apps">Aplicaciones móviles</a></li>
+          <li><a href="#servicio-ia">IA y automatización</a></li>
+          <li><a href="#servicio-ti">Consultoría y soporte TI</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Marcas</h4>
+        <ul>
+          <li><a href="exybi.html">EXYBI</a></li>
+          <li><a href="crm.html">CRM Inteligente</a></li>
+          <li><a href="civicar.html">CIVICAR</a></li>
+          <li><a href="caja-rapida.html">Caja Rápida</a></li>
+          <li><a href="govalle.html">GoValle</a></li>
         </ul>
       </div>
       <div>
         <h4>Empresa</h4>
         <ul>
-          <li><a href="#empresa">Quiénes somos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#precios">Precios</a></li>
           <li><a href="support.html">Soporte</a></li>
           <li><a href="privacy.html">Política de privacidad</a></li>
           <li><a href="mailto:admin@eyaqsystems.com">admin@eyaqsystems.com</a></li>
@@ -360,6 +323,8 @@
   </div>
 </footer>
 
-<script src="js/site.js" defer></script>
+<a class="float-contact" href="#contacto" aria-label="Ir a contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg><span>Escríbenos</span></a>
+
+<script src="js/eyaq.js" defer></script>
 </body>
 </html>
