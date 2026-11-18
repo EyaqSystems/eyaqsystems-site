@@ -370,6 +370,7 @@ button { font: inherit; color: inherit; }
 .service-proof a:hover { border-color: var(--panel-hue); color: var(--panel-hue); }
 
 .rail-head { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; }
+.rail-nav[hidden] { display: none; }
 .rail-nav { display: flex; gap: 0.625rem; margin-bottom: clamp(2rem, 5vw, 3.75rem); }
 .rail-nav button {
   width: 3.25rem; height: 3.25rem;
@@ -387,10 +388,12 @@ button { font: inherit; color: inherit; }
 .rail {
   display: flex;
   gap: 1.25rem;
-  padding-inline: max(1.5rem, (100vw - var(--container)) / 2);
-  padding-bottom: 0.75rem;
+  width: min(var(--container), 100% - 3rem);
+  margin-inline: auto;
+  padding: .5rem .25rem 1.5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-padding-inline: .25rem;
   scrollbar-width: none;
   cursor: grab;
 }
@@ -400,28 +403,28 @@ button { font: inherit; color: inherit; }
 .peak {
   --mx: 50%; --my: 0%;
   position: relative;
-  flex: 0 0 min(26.875rem, 82vw);
+  flex: 1 0 14rem;
   scroll-snap-align: start;
   display: grid;
-  align-content: end;
-  gap: 0.75rem;
-  min-height: 28.75rem;
-  padding: clamp(1.5rem, 3vw, 2.25rem);
+  grid-template-rows: auto 1fr auto;
+  gap: .75rem;
+  min-height: 25rem;
+  padding: 12.75rem clamp(1.25rem, 2vw, 2rem) clamp(1.25rem, 2vw, 2rem);
   border-radius: var(--radius-lg);
   border: 1px solid var(--line-strong);
   background:
-    radial-gradient(26.25rem circle at var(--mx) var(--my), color-mix(in srgb, var(--h) 30%, transparent), transparent 62%),
+    radial-gradient(26rem circle at var(--mx) var(--my), color-mix(in srgb, var(--h) 30%, transparent), transparent 62%),
     var(--card);
   overflow: hidden;
   user-select: none;
   transition: border-color .25s ease, box-shadow .25s ease;
 }
 .peak:hover { border-color: var(--h); box-shadow: var(--shadow); }
-.peak svg.peak-line { position: absolute; inset: 0 0 auto 0; width: 100%; height: 12.5rem; }
-.peak-alt { position: absolute; top: 1.5rem; left: clamp(1.5rem, 3vw, 2.25rem); font: 600 .84rem var(--font-head); color: var(--h); }
-.peak h3 { font-size: clamp(1.9rem, 3vw, 2.5rem); font-weight: 800; }
+.peak svg.peak-line { position: absolute; inset: 3rem 0 auto 0; width: 100%; height: 8.5rem; }
+.peak-alt { position: absolute; top: 1.25rem; left: clamp(1.25rem, 2vw, 2rem); right: 1rem; font: 700 .84rem var(--font-head); color: var(--h); }
+.peak h3 { font-size: clamp(1.45rem, 1.9vw, 2rem); font-weight: 800; }
 .peak p { color: var(--muted); }
-.peak-go { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; font: 600 .96rem var(--font-head); color: var(--h); }
+.peak-go { display: inline-flex; align-items: center; gap: .5rem; align-self: end; font: 700 .96rem var(--font-head); color: var(--h); }
 .peak-go svg { width: 1.125rem; height: 1.125rem; transition: transform .25s ease; }
 .peak:hover .peak-go svg { transform: translateX(5px); }
 
@@ -810,6 +813,8 @@ button { font: inherit; color: inherit; }
   .hero-actions .btn, .marca-actions .btn, .marca-cta .btn { flex: 1 1 100%; }
   .summit span { padding: 4px 0.5625rem; }
   .rail-nav { display: none; }
+  .rail { width: min(var(--container), 100% - 2.25rem); }
+  .peak { flex-basis: 78vw; }
   .route-steps { grid-template-columns: 1fr; }
   .tiers { grid-template-columns: 1fr; }
   .topics, .support-grid { grid-template-columns: 1fr; }

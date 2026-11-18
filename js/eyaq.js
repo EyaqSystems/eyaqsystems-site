@@ -310,6 +310,13 @@
     var rail = document.querySelector('.rail');
     if (!rail) return;
     var drag = { active: false, startX: 0, startScroll: 0, moved: false };
+    var arrows = document.querySelector('.rail-nav');
+
+    function showArrowsWhenScrollable() {
+      if (arrows) arrows.hidden = rail.scrollWidth <= rail.clientWidth + 1;
+    }
+    showArrowsWhenScrollable();
+    window.addEventListener('resize', showArrowsWhenScrollable);
 
     function step() {
       var card = rail.querySelector('.peak');
