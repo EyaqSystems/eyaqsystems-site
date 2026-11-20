@@ -17,7 +17,7 @@ body[data-marca="exybi"] main {
 
 .ex-hero { position: relative; overflow: hidden; padding: clamp(2.5rem, 6vw, 5rem) 0 0; }
 .ex-hero .container { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.75rem, 5vw, 4.5rem); align-items: center; }
-.ex-copy { display: grid; gap: 1.5rem; justify-items: start; padding-bottom: clamp(3rem, 7vw, 6rem); }
+.ex-copy { display: grid; gap: 1.5rem; justify-items: start; padding-bottom: clamp(2rem, 4vw, 3.5rem); }
 .ex-logo { display: inline-flex; align-items: center; gap: 0.75rem; font: 800 1.5rem var(--font-head); letter-spacing: .02em; }
 .ex-logo svg { width: 2.75rem; height: 2.75rem; }
 .ex-hero h1 { font-size: clamp(2.6rem, 5.6vw, 4.6rem); font-weight: 800; line-height: 1; }
@@ -47,9 +47,14 @@ body[data-marca="exybi"] main {
 .ex-ad span { color: var(--muted); font-size: .8rem; }
 .ex-tag { justify-self: start; padding: 2px 0.625rem; border-radius: 62.4375rem; background: var(--tone); color: var(--ex-navy); font-size: .72rem; font-weight: 600; }
 
-.ex-section { padding: var(--section-y) 0; }
+.ex-section { padding: var(--section-y) 0 0; }
 .ex-section.gray { background: #F6F6F6; }
-.ex-head { display: grid; gap: 0.875rem; max-width: 44rem; margin-bottom: clamp(1.75rem, 4vw, 3rem); }
+.ex-section.gray,
+.ex-section.ex-map,
+.ex-section:has(+ .gray),
+.ex-section:has(+ .ex-map),
+main > .ex-section:last-child { padding-bottom: var(--section-y); }
+.ex-head { display: grid; gap: .875rem; max-width: 44rem; margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
 .ex-head h2 { font-size: clamp(2rem, 4.2vw, 3.2rem); font-weight: 800; }
 .ex-head p { color: var(--muted); font-size: 1.06rem; }
 

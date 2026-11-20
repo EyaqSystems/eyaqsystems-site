@@ -148,8 +148,44 @@
     show();
   }
 
+  function setupExpiryOrder() {
+    var board = document.querySelector('.fefo');
+    if (!board) return;
+    var list = board.querySelector('.fefo-list');
+    var firstBatches = list.innerHTML;
+    var status = board.querySelector('[data-fefo-status]');
+    var labelProduct = board.querySelector('[data-label-product]');
+    var labelBatch = board.querySelector('[data-label-batch]');
+    var labelExpiry = board.querySelector('[data-label-expiry]');
+
+    function showLabel(batch) {
+      labelProduct.textContent = batch.getAttribute('data-product');
+      labelBatch.textContent = batch.getAttribute('data-batch');
+      labelExpiry.textContent = batch.getAttribute('data-expiry');
+      labelExpiry.className = 'label-expiry ' + batch.getAttribute('data-state');
+      each('button', function (other) {
+        other.setAttribute('aria-pressed', other === batch ? 'true' : 'false');
+      }, list);
+    }
+
+    list.addEventListener('click', function (event) {
+      var batch = event.target.closest('button');
+      if (batch) showLabel(batch);
+    });
+
+    board.querySelector('[data-fefo-out]').addEventListener('click', function () {
+      var next = list.querySelector('li');
+      var batch = next.querySelector('button');
+      status.textContent = 'Salida registrada: ' + batch.getAttribute('data-product') + ' (' + batch.getAttribute('data-batch') + ').';
+      list.removeChild(next);
+      if (!list.children.length) list.innerHTML = firstBatches;
+      showLabel(list.querySelector('button'));
+    });
+  }
+
   setupPlateLookup();
   setupOwnerDecision();
   setupPointOfSale();
   setupOrderTracking();
+  setupExpiryOrder();
 })();
